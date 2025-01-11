@@ -10,3 +10,8 @@ class BaseController:
       The control signal to be applied to the vehicle.
     """
     raise NotImplementedError
+
+
+# Add these lines:
+from .pid import Controller
+__all__ = ['BaseController', 'Controller']
